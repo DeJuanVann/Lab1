@@ -1,0 +1,42 @@
+body {
+  background-color: #f9fafc;
+}
+
+.top {
+  margin: 0;
+  list-style: none;
+  color: #69696a;
+}
+a {
+  text-decoration: none;
+  text-align: left;
+  color: #69696a;
+  margin-right: 5px;
+  display: flex;
+  flex-direction: left;
+}
+.hire {
+  list-style: none;
+  background-color: black;
+  border: 1px solid black;
+  color: #fff;
+  border-radius: 7px;
+  padding: 7px;
+  text-align: center;
+}
+
+.call {
+  list-style: none;
+  background-color: black;
+  color: #fff;
+  border: 1px solid black;
+  border-radius: 7px;
+  padding: 7px;
+  text-align: center;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  background-color: #24719316;
+}
