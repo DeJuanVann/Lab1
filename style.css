@@ -1,42 +1,111 @@
-body {
-  background-color: #f9fafc;
-}
+/* /* resets */
 
-.top {
+body,
+h1,
+p {
   margin: 0;
-  list-style: none;
-  color: #69696a;
-}
-a {
-  text-decoration: none;
-  text-align: left;
-  color: #69696a;
-  margin-right: 5px;
-  display: flex;
-  flex-direction: left;
-}
-.hire {
-  list-style: none;
-  background-color: black;
-  border: 1px solid black;
-  color: #fff;
-  border-radius: 7px;
-  padding: 7px;
-  text-align: center;
 }
 
-.call {
+body {
+  padding: 20px;
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  font-size: 16px;
+}
+
+nav ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+header a {
+  text-decoration: none;
+  color: #69696a;
+  padding: 5px 5px 5px 0;
+  display: inline-block;
+}
+
+.accent {
   background-color: black;
-  color: #fff;
-  border: 1px solid black;
-  border-radius: 7px;
-  padding: 7px;
+  color: white;
+  width: 100%;
   text-align: center;
+  border-radius: 20px;
+}
+
+.call-to-action {
+  border-left: 3px solid black;
+  padding-left: 10px;
+}
+
+.call-to-action-link {
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px;
+  margin-top: 10px;
 }
 
 footer {
   position: fixed;
   bottom: 0;
-  background-color: #24719316;
+  left: 0;
+  right: 0;
+  background-color: rgba(247, 193, 162, 0.7);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+footer nav ul {
+  display: flex;
+}
+
+footer a {
+  padding: 5px 0 5px 5px;
+  text-decoration: none;
+  color: black;
+}
+
+@media only screen and (min-width: 768px) {
+  nav ul {
+    display: flex;
+    justify-content: right;
+  }
+
+  .call-to-action {
+    width: 50%;
+  }
+  .call-to-action-link {
+    width: 50%;
+  }
+  .large-circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    background-color: rgba(247, 136, 167, 0.6);
+    position: relative;
+    left: 75%;
+    bottom: 150px;
+  }
+  .medium-circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 80px;
+    background-color: rgba(247, 193, 162, 0.7);
+    position: relative;
+    top: 80px;
+    left: 150px;
+  }
+  .small-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: rgba(207, 130, 213, 0.6);
+    position: relative;
+    bottom: 75px;
+  }
 }
